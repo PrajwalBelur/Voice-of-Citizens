@@ -1,0 +1,33 @@
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <h4 class="p-3">Dashboard</h4>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="panchayaths.php">
+                    Panchayths
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="citizens.php">
+                    Citizens
+                </a>
+            </li>
+            <!--            <li class="nav-item">
+                            <a class="nav-link" href="view_chart.php">
+                                Graph
+                            </a>
+                        </li>-->
+                        <li class="nav-item">
+                <a class="nav-link" href="inex.html">
+                    About
+                </a>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php">
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
