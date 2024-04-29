@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="0dp">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:columnCount="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Complaint Details"
+                android:textStyle="bold"
+                app:layout_columnSpan="3"
+                app:layout_gravity="center" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_complaint_type"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="WATER" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="MCC Commercial Complex" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date / Time"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_complaint_date_time"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="01 January 1990 10:00 AM" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_complaint_status"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="DRAFT" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is Solved"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_is_solved"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="YES" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solved Date"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_solved_date"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="01 January 1990" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="Some description about the complaint" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject Reason"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_reject_reason"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="Location is not under our panchayath control" />
+
+            <Button
+                android:id="@+id/btn_add_pictures"
+                style="@style/IssuesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Pictures"
+                app:layout_columnSpan="3" />
+
+            <Button
+                android:id="@+id/btn_mark_as_completed"
+                style="@style/IssuesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Mark as Completed"
+                android:visibility="gone"
+                app:layout_columnSpan="3" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/ProgressStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:visibility="gone"
+                app:layout_columnSpan="3"
+                app:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/btn_view_pictures"
+                style="@style/IssuesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Pictures"
+                android:visibility="gone"
+                app:layout_columnSpan="3" />
+        </androidx.gridlayout.widget.GridLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

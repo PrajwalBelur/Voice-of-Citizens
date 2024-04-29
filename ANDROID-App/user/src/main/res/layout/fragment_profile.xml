@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:columnCount="3">
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="My Profile"
+            android:textStyle="bold"
+            app:layout_columnSpan="3" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:layout_columnSpan="3"
+            app:layout_gravity="center" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="Ramesh" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_contact"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="+91 9876543210" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="ramesh@gmail.com" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="Some long address goes here" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grama"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_grama"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="Grama Name" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:columnCount="3">
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_complaint_type"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="WATER" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="MCC Commercial Complex" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date / Time"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_complaint_date_time"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="01 January 1990 10:00 AM" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text=":"
+            app:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/tv_complaint_status"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            tools:text="DRAFT" />
+
+        <TextView
+            android:id="@+id/tv_view_more_details"
+            style="@style/ComplaintDetailsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:gravity="end"
+            android:text="View More Details"
+            app:layout_columnSpan="3" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_panchayath_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardCornerRadius="0dp">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:columnCount="3">
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="My Panchayath Profile"
+                android:textStyle="bold"
+                app:layout_columnSpan="3" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grama"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_grama"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="Lalbagh" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="President"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_president_name"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="Ramesh" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_president_contact"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="+91 9876543210" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telephone"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_telephone"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="0824-2458564" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="panchayath@gmail.com" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text=":"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/ComplaintDetailsStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_columnWeight="1"
+                tools:text="Some description about the complaint" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <include layout="@layout/progress_bar"/>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+ext {
+
+    compileSdkVersion = 29
+    minSdkVerison = 21
+    targetSdkVerison = 29
+
+    support_lib = "1.1.0"
+    material_lib = "1.1.0"
+    grid_layout = "1.0.0"
+    retrofit = "2.5.0"
+    httplogging = "3.10.0"
+    glide = "4.11.0"
+    circle_image_view = "3.0.0"
+
+    libraries = [
+            appCompat    : "androidx.appcompat:appcompat:$support_lib",
+            materialLib  : "com.google.android.material:material:$material_lib",
+            gridLayout   : "androidx.gridlayout:gridlayout:$grid_layout",
+
+            // networking,
+            retrofitLib  : "com.squareup.retrofit2:retrofit:$retrofit",
+            gsonConvertor: "com.squareup.retrofit2:converter-gson:$retrofit",
+            httpLogging  : "com.squareup.okhttp3:logging-interceptor:$httplogging",
+
+            // glide - image loading library
+            glideLib     : "com.github.bumptech.glide:glide:$glide",
+            glideCompiler: "com.github.bumptech.glide:compiler:$glide",
+
+            // circle image view,
+            cirlceView   : "de.hdodenhof:circleimageview:$circle_image_view"
+    ]
+
+}

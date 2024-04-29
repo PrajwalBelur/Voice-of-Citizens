@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Registration"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spin_district"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <Spinner
+            android:id="@+id/spin_taluk"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <Spinner
+            android:id="@+id/spin_gram_panchayath"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_address"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="start"
+            android:hint="Address"
+            android:inputType="textPostalAddress" />
+
+        <Button
+            android:id="@+id/btn_photo"
+            style="@style/PhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="Photo"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_register"
+            style="@style/IssuesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Submit"
+            android:textAllCaps="false" />
+
+        <include layout="@layout/progress_bar" />
+
+    </LinearLayout>
+
+</ScrollView>

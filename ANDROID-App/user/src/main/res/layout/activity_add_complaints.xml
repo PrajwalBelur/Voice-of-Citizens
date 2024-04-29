@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_complaint_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            tools:text="Write your complaint about " />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/upload_genuine_pic_note" />
+
+        <Button
+            android:id="@+id/btn_take_picture"
+            style="@style/IssuesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Picture" />
+
+        <Button
+            android:id="@+id/btn_location"
+            style="@style/IssuesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Location" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="Current location" />
+
+        <EditText
+            android:id="@+id/et_land_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Land Mark"
+            android:inputType="textPostalAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Your Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start"
+            android:hint="Enter description"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/IssuesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <include layout="@layout/progress_bar" />
+    </LinearLayout>
+
+</ScrollView>

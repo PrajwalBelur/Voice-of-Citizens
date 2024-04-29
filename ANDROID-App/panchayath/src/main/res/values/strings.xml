@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Jana Dhvani</string>
+
+
+    <string name="tag_line"><b>ನವಭಾರತಕ್ಕಾಗಿ ವಿಕಾಸದ ಹಾದಿಯಲ್ಲಿ</b></string>
+    <string name="upload_genuine_pic_note">Please upload valid pic</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="forgot_password_text">Forgot your password? Don\'t worry just enter the registered Email ID and get your password through Email :)</string>
+
+    <string name="about_panchayath">About Panchayath</string>
+    <string name="complaints">Complaints</string>
+    <string name="about_app">About the App</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="activity_titles">
+        <item>@string/about_panchayath</item>
+        <item>@string/complaints</item>
+        <item>@string/about_app</item>
+        <item>@string/logout</item>
+    </string-array>
+</resources>
